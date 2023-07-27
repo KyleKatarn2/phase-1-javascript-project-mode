@@ -2,7 +2,14 @@ function renderAircraft(aircraftData) {
     let list = document.getElementById("aircraft-list");
     let card = document.createElement('li');
     card.className = 'card'
-    card.innerHTML = `<h2> ${aircraftData.designation}</h2>`
+    card.innerHTML = `<h2> ${aircraftData.designation}</h2>
+        <img
+            src="${aircraftData.image}"
+            alt="${aircraftData.name}"
+        />
+
+    
+    `
 }
 
 const init = () => {
