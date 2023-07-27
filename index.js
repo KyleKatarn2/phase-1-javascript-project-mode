@@ -8,7 +8,10 @@ function renderAircraft(aircraftData) {
             alt="${aircraftData.name}"
         />
 
-    
+        <div class="content">
+            <button>${aircraftData.name} Profile</button>
+        </div>
+
     `
 }
 
