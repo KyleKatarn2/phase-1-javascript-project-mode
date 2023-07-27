@@ -8,5 +8,9 @@ const init = () => {
         const input = document.querySelector("input#search");
         list.innerHTML = "";
         info.innerHTML = "";
+
+        fetch(`http://localhost:3000/Aircraft/${input.value}`)
+            .then((response) => response.json())
+            .then((data) => renderAircraft(data));
     });
 };
