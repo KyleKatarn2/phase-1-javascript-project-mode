@@ -14,3 +14,5 @@ const init = () => {
             .then((data) => renderAircraft(data));
     });
 };
+
+document.addEventListener("DOMContentLoaded", init);
