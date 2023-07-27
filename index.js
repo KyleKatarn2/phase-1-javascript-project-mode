@@ -1,3 +1,10 @@
+function renderAircraft(aircraftData) {
+    let list = document.getElementById("aircraft-list");
+    let card = document.createElement('li');
+    card.className = 'card'
+    card.innerHTML = `<h2> ${aircraftData.designation}</h2>`
+}
+
 const init = () => {
     const form = document.querySelector("#Ace-form");
     const list = document.querySelector("#aircraft-list");
