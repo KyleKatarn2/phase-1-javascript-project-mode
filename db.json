@@ -3,32 +3,37 @@
         {
             "id": 1,
             "designation": "ADFX-01",
-            "name": "Morgan"
+            "name": "Morgan",
+            "image": "https://static.wikia.nocookie.net/acecombat/images/6/6a/ADFX-01_AC7_Flyby.png/revision/latest/scale-to-width-down/1000?cb=20190426133403"
         },
 
         {
             "id": 2,
             "designation": "ADF-01",
-            "name": "Falcon"
+            "name": "Falcon",
+            "image": "https://static.wikia.nocookie.net/acecombat/images/a/a3/AC7_ADF-01_Season_Pass_Steam_Store_Image.jpg/revision/latest/scale-to-width-down/1000?cb=20200702121839"
         },
 
         {
             "id": 3,
             "designation": "X-02",
-            "name": "Wyvern"
+            "name": "Wyvern",
+            "image": "https://static.wikia.nocookie.net/acecombat/images/9/90/X-02S_Prepares_for_Aerial_Refueling.png/revision/latest?cb=20200906170110"
         },
 
         {
             "id": 4,
             "designation": "CFA-44",
-            "name": "Nosferatu"
+            "name": "Nosferatu",
+            "image": "https://static.wikia.nocookie.net/acecombat/images/b/be/CFA-44_Firing_ADMM_AC7.jpg/revision/latest/scale-to-width-down/1000?cb=20201112072603"
             
         },
 
         {
             "id": 5,
             "designation": "ADF-11F",
-            "name": "Raven"
+            "name": "Raven",
+            "image": "https://static.wikia.nocookie.net/acecombat/images/b/be/CFA-44_Firing_ADMM_AC7.jpg/revision/latest/scale-to-width-down/1000?cb=20201112072603"
             
         }
 
