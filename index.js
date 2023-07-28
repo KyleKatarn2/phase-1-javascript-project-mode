@@ -1,3 +1,7 @@
+const form = document.querySelector("#Ace-form");
+const list = document.querySelector("#aircraft-list");
+const repo = document.querySelector("#info-list");
+
 function renderAircraft(aircraftData) {
     let list = document.getElementById("aircraft-list");
     let card = document.createElement('li');
@@ -11,8 +15,8 @@ function renderAircraft(aircraftData) {
         <div class="content">
             <button>${aircraftData.name} Profile</button>
         </div>
-
     `
+
 }
 
 const init = () => {
