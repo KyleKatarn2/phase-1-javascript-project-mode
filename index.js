@@ -23,6 +23,13 @@ function renderAircraft(aircraftData) {
 
 }
 
+function handleClick(aircraftData) {
+    fetch(`http://localhost:3000/Aircraft/${aircraftData.id}`)
+        .then((response) => response.json())
+        .then(data => renderInfo(data))
+}
+
+
 const init = () => {
     const form = document.querySelector("#Ace-form");
     const list = document.querySelector("#aircraft-list");
