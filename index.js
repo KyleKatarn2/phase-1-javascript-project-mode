@@ -29,6 +29,17 @@ function handleClick(aircraftData) {
         .then(data => renderInfo(data))
 }
 
+function renderInfo(aircraft) {
+    let info = document.getElementById("info-list");
+    const li = document.createElement('li');
+   
+    li.innerHTML = `<h2>${aircraft.sortie}</h2>
+        <h3>${aircraft.description}</h3>
+    `
+    info.append(li);
+       
+}
+
 
 const init = () => {
     const form = document.querySelector("#Ace-form");
