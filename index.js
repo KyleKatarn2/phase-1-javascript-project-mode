@@ -17,7 +17,7 @@ function renderAircraft(aircraftData) {
         </div>
     `
 
-    card.querySelector("button").addEventListener('click', (e) => handleClick(aircraftData));
+    card.querySelector("button").addEventListener('click', (e) => handleClick(aircraftData), {once: true});
 
     list.appendChild(card);
 
