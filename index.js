@@ -40,6 +40,12 @@ function renderInfo(aircraft) {
        
 }
 
+function getAircraft() {
+    fetch(`http://localhost:3000/Aircraft`)
+    .then((response) => response.json())
+    .then((data) => data.forEach(data => renderAircraft(data)));
+}
+
 
 const init = () => {
     const form = document.querySelector("#Ace-form");
