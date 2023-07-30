@@ -46,6 +46,11 @@ function getAircraft() {
     .then((data) => data.forEach(data => renderAircraft(data)));
 }
 
+function initialize() {
+    getAircraft();
+}
+initialize();
+
 
 const init = () => {
     const form = document.querySelector("#Ace-form");
