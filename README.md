@@ -3,6 +3,8 @@
 ## Project Premise:
 This project will simply display original aircraft from the Ace Combat series. With this I would display each Aircraft with their respective images and history.
 
+<img src= "image.png" alt="aircraft image">
+
 
 ## Features:
 * A list of orignal Aircraft of the Ace Combat Series with images of each respective aircraft.
