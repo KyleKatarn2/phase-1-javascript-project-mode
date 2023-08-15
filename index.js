@@ -37,22 +37,21 @@ function renderInfo(aircraft) {
         <h3>${aircraft.description}</h3>
     `
     info.append(li);
-       
+
 }
 
 function getAircraft() {
     fetch(`http://localhost:3000/Aircraft`)
     .then((response) => response.json())
-    .then((data) => data.forEach(data => renderAircraft(data)));
+    .then((data) => {
+        data.forEach(data => renderAircraft(data))
+    });
 }
-
-function initialize() {
-    getAircraft();
-}
-initialize();
 
 
 const init = () => {
+    getAircraft();
+
     const form = document.querySelector("#Ace-form");
     const list = document.querySelector("#aircraft-list");
     const info = document.querySelector("#info-list");
