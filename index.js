@@ -3,7 +3,6 @@ const list = document.querySelector("#aircraft-list");
 const repo = document.querySelector("#info-list");
 
 function renderAircraft(aircraftData) {
-    let list = document.getElementById("aircraft-list");
     let card = document.createElement('li');
     card.className = 'card'
     card.innerHTML = `<h2> ${aircraftData.designation}</h2>
@@ -41,10 +40,11 @@ function renderInfo(aircraft) {
 }
 
 function getAircraft() {
+    console.log("hello")
     fetch(`http://localhost:3000/Aircraft`)
     .then((response) => response.json())
     .then((data) => {
-        data.forEach(data => renderAircraft(data))
+        data.forEach(renderAircraft)
     });
 }
 
@@ -64,7 +64,7 @@ const init = () => {
 
         fetch(`http://localhost:3000/Aircraft/${input.value}`)
             .then((response) => response.json())
-            .then((data) => renderAircraft(data));
+            .then(renderAircraft);
     });
 };
 
